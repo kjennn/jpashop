@@ -34,5 +34,51 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status; // 주문상태 (orser, cancel)
 
+    public void setMember(Member member){
+        this.member = member;
+        member.getOrders().add(this);
+    }
 
+    public void addOrderItem(OrderItem orderItem){
+        orderItems.add(orderItem);
+        orderItem.setOrder(this);
+    }
+
+    public void setDelivery(Delivery delivery){
+        this.delivery = delivery;
+        delivery.setOrder(this);
+    }
+
+    public static Order createOrder(Member member, Delivery delivery, OrderItem... orderItems){
+        Order order = new Order();
+        order.setMember(member);
+        order.setDelivery(delivery);
+        for (OrderItem orderItem : orderItems){
+            order.addOrderItem(orderItem);
+        }
+        order.setStatus(OrderStatus.ORDER);
+        order.setOrderDate(LocalDateTime.now());
+        return  order;
+    }
+
+    //주문 취소
+    public void cancel(){
+        if(delivery.getStatus() == DeliverStatus.COMP){
+            throw new IllegalStateException("이미 배송완료된 상품은 취소가 불가능합니다.");
+        }
+
+        this.setStatus(OrderStatus.CANCLE);
+        for(OrderItem orderItem : orderItems){
+            orderItem.cancle();
+        }
+    }
+
+    //조회로직
+    public int getTotalPrice(){
+        int totalPrice = 0;
+        for(OrderItem orderItem : orderItems){
+            totalPrice += orderItem.getTotalPrice();
+        }
+        return totalPrice;
+    }
 }

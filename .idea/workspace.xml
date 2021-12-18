@@ -5,20 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d988e41a-ba86-4697-9fdb-03bf48abed62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/jpabook/jpashop/Service/MemberServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jpabook/jpashop/MemberRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/MemberRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/jpabook/jpashop/MemberRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/Repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/Service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/Service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/item/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/jpabook/jpashop/Service/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jpabook/jpashop/Service/MemberServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +107,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="jpabook.jpashop.exception" />
       <recent name="jpabook.jpashop.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -119,53 +122,7 @@
       <recent name="jpabook.jpashop" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MemberServiceTest">
-    <configuration name="JpashopApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;jpabook.jpashop.JpashopApplicationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="MemberRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;jpabook.jpashop.MemberRepositoryTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.OrderServiceTest.상품주문">
     <configuration name="MemberServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -235,6 +192,52 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="OrderServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;jpabook.jpashop.Service.OrderServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="OrderServiceTest.상품주문" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;jpabook.jpashop.Service.OrderServiceTest.상품주문&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="JpashopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="jpashop.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="jpabook.jpashop.JpashopApplication" />
@@ -252,20 +255,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.MemberRepositoryTest" />
-      <item itemvalue="Spring Boot.JpashopApplication" />
       <item itemvalue="Gradle.MemberServiceTest.회원가입" />
-      <item itemvalue="Gradle.JpashopApplicationTests" />
       <item itemvalue="Gradle.MemberServiceTest" />
       <item itemvalue="Gradle.MemberServiceTest.중복_회원_예외" />
+      <item itemvalue="Spring Boot.JpashopApplication" />
+      <item itemvalue="Gradle.OrderServiceTest.상품주문" />
+      <item itemvalue="Gradle.OrderServiceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.OrderServiceTest.상품주문" />
+        <item itemvalue="Gradle.OrderServiceTest" />
         <item itemvalue="Gradle.MemberServiceTest" />
         <item itemvalue="Gradle.MemberServiceTest.중복_회원_예외" />
         <item itemvalue="Gradle.MemberServiceTest.회원가입" />
-        <item itemvalue="Gradle.JpashopApplicationTests" />
-        <item itemvalue="Gradle.MemberRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -284,6 +287,7 @@
       <workItem from="1639214430181" duration="1438000" />
       <workItem from="1639282872589" duration="6219000" />
       <workItem from="1639629706906" duration="4842000" />
+      <workItem from="1639807312156" duration="7958000" />
     </task>
     <servers />
   </component>
