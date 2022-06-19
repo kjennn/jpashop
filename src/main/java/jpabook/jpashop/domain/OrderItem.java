@@ -40,7 +40,7 @@ public class OrderItem {
         return orderItem;
     }
     //  비지니스 로직
-    public void cancle() {
+    public void cancel() {
         getItem().addStock(count);
 
     }
